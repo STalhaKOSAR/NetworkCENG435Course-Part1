@@ -2,7 +2,7 @@ import socket
 import time
 import ntplib
 
-TCP_IP = "127.0.0.1"
+TCP_IP = "10.10.1.2"
 TCP_PORT = 12001
 
 print "TCP target IP:", TCP_IP

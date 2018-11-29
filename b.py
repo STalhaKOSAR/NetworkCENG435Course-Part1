@@ -5,8 +5,8 @@ import socket
 
 TCP_PORT = 12001
 
-UDP_IP = "127.0.0.1"
-UDP_IP2 = "127.0.0.1"
+UDP_IP = "10.10.2.2" #r1
+UDP_IP2 = "10.10.4.2" #r2
 
 UDP_PORT1 = 12002
 UDP_PORT2 = 12003 
