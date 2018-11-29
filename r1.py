@@ -11,6 +11,6 @@ sock2 = socket.socket(socket.AF_INET,
 sock.bind(('', UDP_PORT))
 
 for i in range(0,10):
-    data, addr = sock.recvfrom(17) 
+    data, addr = sock.recvfrom(18) 
     print "received message:", data
     sock2.sendto(data, (UDP_IP, UDP_PORT2))

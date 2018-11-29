@@ -16,8 +16,6 @@ for i in range (0,10):
     response = c.request('time.google.com')
     time = response.tx_time
     MESSAGE = repr(time)
-    if len(MESSAGE)==18:
-        MESSAGE = MESSAGE[:-1]
     sock.send(MESSAGE)
 
 sock.close()

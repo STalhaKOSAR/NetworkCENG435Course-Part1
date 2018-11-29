@@ -20,7 +20,7 @@ s.listen(1)
 conn, addr = s.accept()
 print 'Connection address:', addr
 for i in range(0,10):
-    data = conn.recv(17)
+    data = conn.recv(18)
     print "received data:", data 
     sock.sendto(data, (UDP_IP, UDP_PORT1))
     sock.sendto(data, (UDP_IP2, UDP_PORT2))
