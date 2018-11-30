@@ -2,6 +2,7 @@ import socket
 from thread import *
 import threading
 import ntplib
+import time
 
 print_lock = threading.Lock()
 
@@ -13,12 +14,14 @@ def thread(port):
     sock.bind(('', UDP_PORT1))
 
     for i in range(0,10):
-        data, addr = sock.recvfrom(18)
-        c = ntplib.NTPClient()
-        response = c.request('time.google.com')
-        time = response.tx_time
-        dataFloat = float(data)
-        print "diff",time-dataFloat
+		time.sleep(1)
+		for y in range(0,10):
+			data, addr = sock.recvfrom(18)
+			c = ntplib.NTPClient()
+			response = c.request('time.google.com')
+			timer = response.tx_time
+			dataFloat = float(data)
+			print "diff",timer-dataFloat
 
 def Main(): 
     print_lock.acquire() 
