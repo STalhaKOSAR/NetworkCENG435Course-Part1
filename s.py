@@ -16,8 +16,8 @@ for i in range (0,10):
     time.sleep(1)
     for y in range (0,10):
         response = c.request('time.google.com')
-        time = response.tx_time
-        MESSAGE = repr(time)
+        timer = response.tx_time
+        MESSAGE = repr(timer)
         sock.send(MESSAGE)
 
 sock.close()
