@@ -19,4 +19,5 @@ for i in range (0,10):
         MESSAGE = repr(timer)
         sock.send(MESSAGE)
     time.sleep(1)
+
 sock.close()
