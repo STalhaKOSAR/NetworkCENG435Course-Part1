@@ -6,7 +6,7 @@ import time
 
 print_lock = threading.Lock()
 
-def thread(port):
+def thread(port,routerName):
     UDP_PORT1 = port
 
     sock = socket.socket(socket.AF_INET, 
@@ -21,13 +21,14 @@ def thread(port):
 			response = c.request('time.google.com')
 			timer = response.tx_time
 			dataFloat = float(data)
-			print "end to end delay for package: ",10*i+y+1,"=>",(timer-dataFloat)*1000, "ms"
+			print "end to end delay for package from ",routerName, ": ",10*i+y+1,"=>",(timer-dataFloat)*1000, "ms"
 
 def Main(): 
     print_lock.acquire() 
-
-    start_new_thread(thread,(12004,))
-    start_new_thread(thread,(12005,))
+    r1 = "router 1"
+    r2 = "router 2"
+    start_new_thread(thread,(12004,r1))
+    start_new_thread(thread,(12005,r2))
     while True: 
         pass
   
