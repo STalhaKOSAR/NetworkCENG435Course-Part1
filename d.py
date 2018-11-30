@@ -21,14 +21,14 @@ def thread(port):
 			response = c.request('time.google.com')
 			timer = response.tx_time
 			dataFloat = float(data)
-			print "diff",timer-dataFloat
+			print "end to end delay for package: ",10*i+y+1,"=>",(timer-dataFloat)*1000, "ms"
 
 def Main(): 
     print_lock.acquire() 
 
     start_new_thread(thread,(12004,))
     start_new_thread(thread,(12005,))
-    while True:
+    while True: 
         pass
   
 if __name__ == '__main__': 
