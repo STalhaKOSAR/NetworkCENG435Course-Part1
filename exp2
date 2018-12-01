@@ -2,7 +2,7 @@ end to end delay for package from  router 2 :  1 => 67.0280456543 ms
 end to end delay for package from  router 2 :  2 => 68.3326721191 ms
 end to end delay for package from  router 1 :  1 => 140.15007019 ms
 end to end delay for package from  router 1 :  2 => 143.507003784 ms
- end to end delay for package from  router 2 :  3 => 80.8534622192 ms
+end to end delay for package from  router 2 :  3 => 80.8534622192 ms
 end to end delay for package from  router 2 :  4 => 79.9202919006 ms
 end to end delay for package from  router 1 :  3 => 148.406982422 ms
 end to end delay for package from  router 2 :  5 => 78.5565376282 ms
@@ -198,3 +198,5 @@ end to end delay for package from  router 1 :  98 => 184.309005737 ms
 end to end delay for package from  router 2 :  100 => 127.436637878 ms
 end to end delay for package from  router 1 :  99 => 187.072277069 ms
 end to end delay for package from  router 1 :  100 => 200.329303741 ms
+
+95% Confidence Interval: 134 ± 6.68
