@@ -26,7 +26,7 @@ for i in range (0,10):
         #Request NTP time
         response = c.request('time.google.com')
         timer = response.tx_time
-        print "Timer: =>",(timer)*1000
+        print "Timer: =>",(timer)
         #Change time to String
         MESSAGE = repr(timer)
         #Send the time as a packet to broker
