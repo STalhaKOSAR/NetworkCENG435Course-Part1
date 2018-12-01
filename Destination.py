@@ -28,8 +28,6 @@ def thread(port,routerName):
 			timer = response.tx_time
 			#Convert received data to float
 			dataFloat = float(data)
-			print "Timer: =>",(timer)
-        	print "Data: =>",(dataFloat)
 			#Get difference of times between current time and time from data to calculate end-to-end delay as an ms
     		print "end to end delay for package from ",routerName, ": ",10*i+y+1,"=>",(timer-dataFloat)*1000, "ms"
 
