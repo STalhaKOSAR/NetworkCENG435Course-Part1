@@ -31,9 +31,6 @@ for i in range(0,10):
     for y in range (0,10):
         #Receive packets from source
         data = conn.recv(18)
-        #Send packets to routers 
-        sock.sendto(data, (UDP_IP, UDP_PORT1))
-        sock.sendto(data, (UDP_IP2, UDP_PORT2))
         c = ntplib.NTPClient()
         response = c.request('time.google.com')
         timer = response.tx_time
@@ -41,6 +38,10 @@ for i in range(0,10):
         dataFloat = float(data)
         #Get difference of times between current time and time from data to calculate end-to-end delay as an ms
         print "end to end delay for TCP: =>",(timer-dataFloat)*1000, "ms"
+        #Send packets to routers 
+        sock.sendto(data, (UDP_IP, UDP_PORT1))
+        sock.sendto(data, (UDP_IP2, UDP_PORT2))
+       
 
 #Close the TCP connection
 conn.close()
