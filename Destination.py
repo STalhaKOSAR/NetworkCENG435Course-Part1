@@ -31,7 +31,7 @@ def thread(port,routerName):
 			print "Timer: =>",(timer)
         	print "Data: =>",(dataFloat)
 			#Get difference of times between current time and time from data to calculate end-to-end delay as an ms
-			print "end to end delay for package from ",routerName, ": ",10*i+y+1,"=>",(timer-dataFloat)*1000, "ms"
+    		print "end to end delay for package from ",routerName, ": ",10*i+y+1,"=>",(timer-dataFloat)*1000, "ms"
 
 def Main(): 
 	#block until call to release()
