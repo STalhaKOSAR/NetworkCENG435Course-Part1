@@ -1,5 +1,9 @@
 # CENG435 TERM PROJECT PART 1
 
+Group 26
+Furkan Doğan / 2098937
+Sinan Talha Koşar / 2099190
+
 In this project we are sending data from source to destination with UDP and TCP.As and data we are sending time from source and when that time reaches to destination we are getting current time. After getting difference of two time data we are finding end-to-end delay between source and destination.
 
 ## NTP Installation
@@ -35,3 +39,37 @@ Routers gets packets from Broker with UDP and sends it to the Destination with U
 ## Destination.py
 
 Destination.py gets packets from Routers with UDP and gets time with NTP and take difference between times and prints end-to-end delay between Source and Destination.
+
+## How to Run
+
+These commands need to apply one after another
+
+```
+python Broker.py
+
+```
+```
+python Router1.py
+
+```
+```
+python Router2.py
+
+```
+```
+python Destination.py
+
+```
+```
+python Source.py
+
+```
+
+## To add Emulated Delay
+
+```
+sudo tc qdisc add dev eth0 root netem delay 100ms 10ms
+
+```
+
+This causes the added delay to be 100ms ± 10ms to the interface named eth0
