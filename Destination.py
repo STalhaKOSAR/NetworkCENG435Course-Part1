@@ -37,8 +37,8 @@ def Main():
     r1 = "router 1"
     r2 = "router 2"
 	#Start new threads to het packets from routers simultenaously
-    start_new_thread(thread,(12004,r1))
-    start_new_thread(thread,(12005,r2))
+    start_new_thread(thread,(12002,r1))
+    start_new_thread(thread,(12003,r2))
     while True: 
         pass
   
