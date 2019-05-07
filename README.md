@@ -1,8 +1,5 @@
 # CENG435 TERM PROJECT PART 1
 
-Group 26 <br />
-Furkan Doğan / 2098937 <br />
-Sinan Talha Koşar / 2099190 <br />
 
 In this project we are sending data from source to destination with UDP and TCP.As and data we are sending time from source and when that time reaches to destination we are getting current time. After getting difference of two time data we are finding end-to-end delay between source and destination.
 
