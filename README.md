@@ -85,4 +85,4 @@ This causes the added delay to be 100ms ± 10ms to the interface named eth0.
 
 ## Project Owners
 Sinan Talha KOSAR  
-Furkan DOGAN[https://github.com/furkandoganktf]
+[Furkan DOGAN](https://github.com/furkandoganktf)
